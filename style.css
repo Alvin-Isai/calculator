@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    background: url(background.jpeg);
+}
+h1 {
+    background: white;
+}
+#container {
+    border: 2px solid black;
+    border-radius: 3px;
+    background: rgb(223, 220, 220);
+    height: 45em;
+    width: 35em;
+    display: inline-block;
+    margin: 40px 0 40px 0;
+}
+#screen {
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 80px;
+    margin: 40px;
+    text-align: right;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 50%;
+    outline: none;
+    height: 6em;
+    width: 7em;
+    margin: 15px 2px 2px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 50px;
+}
+#operator {
+    background: #FFCC00;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <header>
+            <h1>Calculator</h1>
+        </header>
+        <div id='container'>
+            <div id='screen'></div>
+            <div>
+                <input type="button" class="button" value="AC" data-selection="AC" title="Clear the memory">
+                <input type="button" class="button" value="+/-" data-selection="-" title="Negate the displayed value">
+                <input type="button" class="button" id='operator' value="!" data-key='!' title="Factorial">
+                <input type="button" class="button" id="operator" value="÷" data-key="/" title="Division operator">
+            </div>
+            <div>
+                <input type="button" class="button" value="7" data-selection="7" title="Number 7">
+                <input type="button" class="button" value="8" data-selection="8" title="Number 8">
+                <input type="button" class="button" value="9" data-selection="9" title="Number 9">
+                <input type="button" class="button" id="operator" value="X" data-key="*" title="Multiplication operator">
+            </div>
+            <div>
+                <input type="button" class="button" value="4" data-selection="4" title="Number 4">
+                <input type="button" class="button" value="5" data-selection="5" title="Number 5">
+                <input type="button" class="button" value="6" data-selection="6" title="Number 6">
+                <input type="button" class="button" id="operator" value="-" data-key="-" title="Subtraction operator">
+            </div>
+            <div>
+                <input type="button" class="button" value="1" data-selection="1" title="Number 1">
+                <input type="button" class="button" value="2" data-selection="2" title="Number 2">
+                <input type="button" class="button" value="3" data-selection="3" title="Number 3">
+                <input type="button" class="button" id="operator" value="+" data-key="+" title="Addition operator">
+            </div>
+            <div>
+                <input type="button" class="button" value="0" data-selection="0" title="Number 0">
+                <input type="button" class="button" value="." data-selection="." title="Decimal point">
+                <input type="button" class="button" id='operator' value="x²" data-key="**" title="Exponent operator">
+                <input type="button" class="button" id="equals" value="=" title="Equals operator">
+            </div>
+        </div>
+    </body>
+</html>
+<script src="script.js"></script>
