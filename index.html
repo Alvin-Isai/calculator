@@ -11,9 +11,8 @@
         <div id='container'>
             <div id='screen'></div>
             <div>
-                <input type="button" class="button" value="AC" data-selection="AC" title="Clear the memory">
-                <input type="button" class="button" value="+/-" data-selection="-" title="Negate the displayed value">
-                <input type="button" class="button" id='operator' value="!" data-key='!' title="Factorial">
+                <input type="button" class="button" id="ac" value="AC" data-ac="AC" title="Clear the memory">
+                <input type="button" class="button" value="|<--" data-backspace='back' title="Backspace">
                 <input type="button" class="button" id="operator" value="÷" data-key="/" title="Division operator">
             </div>
             <div>
@@ -38,7 +37,7 @@
                 <input type="button" class="button" value="0" data-selection="0" title="Number 0">
                 <input type="button" class="button" value="." data-selection="." title="Decimal point">
                 <input type="button" class="button" id='operator' value="x²" data-key="**" title="Exponent operator">
-                <input type="button" class="button" id="equals" value="=" title="Equals operator">
+                <input type="button" class="button" id="operator" data-equals='=' value="=" title="Equals operator">
             </div>
         </div>
     </body>
