@@ -1,12 +1,12 @@
-const screen = document.querySelector('#screen');
+const screen = document.querySelector('#numbers');
 const numButtons = document.querySelectorAll('[data-selection]');
 const operaterButtons = document.querySelectorAll('[data-key]');
 const equals = document.querySelector('[data-equals]');
-const memory = document.querySelector('[data-ac]');
+const resetMemory = document.querySelector('[data-ac]');
 const backspace = document.querySelector('[data-backspace]')
 
-let DISPLAYVALUE = ''
-let SECONDNUMBER = ''
+let displayValue = ''
+let secondNumber = ''
 let array = []
 
 numButtons.forEach(numButton => {
@@ -17,39 +17,39 @@ numButtons.forEach(numButton => {
 });
 
 function display(number) {
-    if (number === '.' && DISPLAYVALUE.includes('.')) return;
-    DISPLAYVALUE += number;
-    screen.innerHTML = DISPLAYVALUE;
+    if (number === '.' && displayValue.includes('.')) return;
+    displayValue += number;
+    screen.innerHTML = displayValue;
 };
 
 operaterButtons.forEach(operaterButton => {
     operaterButton.addEventListener('click', e => {
         OPERATOR = operaterButton.dataset.key
-        array.push(DISPLAYVALUE)
+        array.push(displayValue)
         array.push(OPERATOR)
-        SECONDNUMBER = DISPLAYVALUE
-        DISPLAYVALUE = ''
+        secondNumber = displayValue
+        displayValue = ''
     });
 });
 
 equals.addEventListener('click', () => {
-    array.push(DISPLAYVALUE)
-    screen.innerHTML = DISPLAYVALUE;
+    array.push(displayValue)
+    screen.innerHTML = displayValue;
     operate(array)
     
 });
 
 backspace.addEventListener('click', () => {
-    let index = DISPLAYVALUE.length;
-    DISPLAYVALUE = DISPLAYVALUE.slice(0, index - 1)
-    screen.innerHTML = DISPLAYVALUE
+    let index = displayValue.length;
+    displayValue = displayValue.slice(0, index - 1)
+    screen.innerHTML = displayValue
 });
 
-memory.addEventListener('click', e => {
-    DISPLAYVALUE = ''
-    SECONDNUMBER = ''
+resetMemory.addEventListener('click', e => {
+    displayValue = ''
+    secondNumber = ''
     array = []
-    screen.innerHTML = DISPLAYVALUE
+    screen.innerHTML = displayValue
 });
 
 function operate(array) {

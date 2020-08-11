@@ -5,11 +5,10 @@
         <title>Calculator</title>
     </head>
     <body>
-        <header>
-            <h1>Calculator</h1>
-        </header>
         <div id='container'>
-            <div id='screen'></div>
+            <div id='screen'>
+                <p id='numbers'></p>
+            </div>
             <div>
                 <input type="button" class="button" id="ac" value="AC" data-ac="AC" title="Clear the memory">
                 <input type="button" class="button" value="|<--" data-backspace='back' title="Backspace">
@@ -19,7 +18,7 @@
                 <input type="button" class="button" value="7" data-selection="7" title="Number 7">
                 <input type="button" class="button" value="8" data-selection="8" title="Number 8">
                 <input type="button" class="button" value="9" data-selection="9" title="Number 9">
-                <input type="button" class="button" id="operator" value="X" data-key="*" title="Multiplication operator">
+                <input type="button" class="button" id="operator" value="x" data-key="*" title="Multiplication operator">
             </div>
             <div>
                 <input type="button" class="button" value="4" data-selection="4" title="Number 4">
@@ -42,4 +41,6 @@
         </div>
     </body>
 </html>
+
+
 <script src="script.js"></script>
